@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Meu primeiro Bootstrap</title>
+	<link rel="stylesheet" type="text/css"
+	 href="css/bootstrap.min.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="jumbotron"
+	style="background-color: deepSkyBlue  ">
+
+<h1 class="text-light text-center>">Alo HA Mundo!</h1>
+</div>
+<h2>Carrossel</h2>
+<!-- início do carrosel -->
+
+<div class="container">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/chile.jpg" class="d-block w-100" alt="chile">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Chile</h5>
+          <p>Lago azul no Chile</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/lago.jpg" class="d-block w-100" alt="lago">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lago</h5>
+          <p>montanhas verdes e lindas</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/praia.jpg" class="d-block w-100" alt="praia">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Praia</h5>
+          <p>Praia no fim da tarde</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">próxima</span>
+    </a>
+  </div>
+</div>
+
+ <script type="text/javascript" src="javascript/jquery-3.3.1.slim.min.js"></script>
+ <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+ <div container>
+	 <h2>Colunas</h2>
+	 <div class="row"><!-- linha -->
+	 	<div class="col">
+	 		<div class="collapse" id="col1">
+	 		<h3 class="text-center">Coluna 1</h3>
+	 		<p>texto para coluna 1</p>
+	 		<img src="imagens/chile.jpg"
+	 		class="img-fluid rounded-circle">
+	 		</div>
+	 		<button class="btn btn-danger"
+	 		data-toggle="collapse"
+	 		data-target="#col1">mostrar</button>
+
+
+	 	</div>
+
+	 	<div class="col">
+	 		<div class="collapse" id="col2">
+	 		<h3 class="text-center">Coluna2</h3>
+	 		<p>texto para coluna 2</p>
+	 		<img src="imagens/lago.jpg"
+	 		class="img-fluid img-thumbnail">
+	 		</div>
+	 		<button class="btn btn-success"
+	 		data-target="#col2"
+	 		data-toggle="collapse">Mostrar</button>
+
+	 	</div>
+
+		 <div class="col">
+		 	<div class="collapse" id="col3">
+		 	<h3 class="text-center">Coluna 3</h3>
+		 	<p>texto para coluna 3</p>
+		 	<img src="imagens/praia.jpg"
+		 	class="img-fluid rounded-circle">
+		 	</div>
+		 	<button class="btn btn-primary"
+	 		data-toggle="collapse"
+	 		data-target="#col3">Mostrar</button>
+
+		 </div>
+		</body>
+
+	</div><!-- fim da row -->
+	</div><!-- fim container -->
+	<div class=" alert alert-warning">
+		<h2>Collapse</h2>
+		<div id="escondidinho" class="collapse">
+			<p class="alert alert-danger"> aparece e desaparece!</p>
+		</div>
+		<button data-toggle="collapse" 
+		data-target="#escondidinho">
+	Mostrar</button>
+		</div>
+<!-- javascrip para o bootstrap -->
+
+
+</body>
+</html>
